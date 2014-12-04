@@ -1,6 +1,6 @@
 require 'faker'
-require_relative '../app'
+require_relative '../app/models/users'
 
 4.times do
-  User.create(username: Faker::Internet.user_name, password: Faker::Internet.password(8), email: Faker::Internet.free_email )
+  User.create( {username: Faker::Internet.user_name, password: Faker::Internet.password(8), email: Faker::Internet.free_email} )
 end

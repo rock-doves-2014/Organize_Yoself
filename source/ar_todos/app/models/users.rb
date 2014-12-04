@@ -1,28 +1,30 @@
-class User
-  attr_reader :id, :username, :password, :email
 
-  def initialize(args)
-    @id = args[:id]
-    @username = args[:username]
-    @password = args[:password]
-    @email = args[:email]
-  end
 
-  def login(username, password)
-    validate(
 
-  end
+class User < ActiveRecord::Base
 
-  def validate(username, password)
-    retrieve_data
+  # attr_reader :id, :username, :password, :email
 
-  end
+  # def initialize(args)
+  #   # @id = args[:id]
+  #   @username = args[:username]
+  #   @password = args[:password]
+  #   @email = args[:email]
+  # end
 
-  def sign_up
-  end
+  # def login(username, password)
+  #   validate(
+  # end
 
-  def retrieve_data
+  # def validate(username, password)
+  #   retrieve_data
+  # end
 
-  end
+  # def sign_up
+  # end
+
+  # def retrieve_data
+
+  # end
 #select password, id from users where username='Nick';
 end
